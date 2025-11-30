@@ -1,7 +1,4 @@
-import { useQuiz } from "../Contexts/QuizContext";
-
-function Restart() {
-  const { dispatch, index, numQuestions } = useQuiz();
+function Restart({ dispatch, index, numQuestions }) {
   if (index === numQuestions)
     return (
       <button
